@@ -85,7 +85,7 @@ class Socialmedia extends MY_Controller
 
         $this->nama = $post['nama'];
         $this->link = $post['link'];
-        $this->link = $post['icon'];
+        $this->icon = $post['icon'];
 
         $this->Mod_socialmedia->update($id, $this);
         echo json_encode(array("status" => TRUE));
